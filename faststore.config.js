@@ -1,14 +1,14 @@
 module.exports = {
   seo: {
-    title: "NextJSStore",
-    description: "Fast Demo Store",
+    title: "Appliances EMEA",
+    description: "Fast storefront",
     titleTemplate: "%s | FastStore",
-    author: "Store Framework",
+    author: "Diego Donaggio",
   },
   theme: "custom-theme",
   platform: "vtex",
   api: {
-    storeId: "storeframework",
+    storeId: "appliancesemea",
     workspace: "master",
     environment: "vtexcommercestable",
     hideUnavailableItems: false,
@@ -16,12 +16,12 @@ module.exports = {
   },
   session: {
     currency: {
-      code: "USD",
-      symbol: "$",
+      code: "GBP",
+      symbol: "£",
     },
-    locale: "en-US",
+    locale: "en-GB",
     channel: '{"salesChannel":"1","regionId":""}',
-    country: "USA",
+    country: "GBR",
     deliveryMode: null,
     addressType: null,
     postalCode: null,
@@ -34,34 +34,33 @@ module.exports = {
     messages: [],
     shouldSplitItem: true,
   },
-  storeUrl: "https://vtexfaststore.com",
-  secureSubdomain: "https://secure.vtexfaststore.com",
-  checkoutUrl: "https://secure.vtexfaststore.com/checkout",
-  loginUrl: "https://secure.vtexfaststore.com/api/io/login",
-  accountUrl: "https://secure.vtexfaststore.com/api/io/account",
+  storeUrl: "https://appliancesemea.vtex.app",
+  secureSubdomain: "https://appliancesemea.myvtex.com/",
+  checkoutUrl: "https://appliancesemea.myvtex.com/checkout",
+  loginUrl: "https://appliancesemea.myvtex.com/login",
+  accountUrl: "https://appliancesemea.myvtex.com/api/io/account",
   previewRedirects: {
     home: "/",
-    plp: "/office",
-    search: "/s?q=headphone",
-    pdp: "/apple-magic-mouse/p",
+    plp: "/appliances",
+    search: "/s?q=vacuum",
+    pdp: "/smart-kitchen-dock/p",
   },
   lighthouse: {
     server: "http://localhost:3000",
     pages: {
       home: "/",
-      pdp: "/apple-magic-mouse/p",
-      collection: "/office",
+      pdp: "/smart-kitchen-dock/p",
+      collection: "/appliances",
     },
   },
   cypress: {
     pages: {
       home: "/",
-      pdp: "/apple-magic-mouse/p",
-      collection: "/office",
-      collection_2: "/technology",
+      pdp: "/smart-kitchen-dock/p",
+      collection: "/appliances",
       collection_filtered:
-        "/office/?category-1=office&marca=acer&facets=category-1%2Cmarca",
-      search: "/s?q=orange",
+        "/appliances/dyson?initialMap=c&initialQuery=appliances&map=category-1,brand",
+      search: "/s?q=vacuum",
     },
   },
   analytics: {
@@ -71,10 +70,10 @@ module.exports = {
     nodeVersion: 18,
     cypressVersion: 12,
   },
-  account: "storeframework",
+  account: "appliancesemea",
   vtexHeadlessCms: {
     webhookUrls: [
-      "https://storeframework.myvtex.com/cms-releases/webhook-releases",
+      "https://appliancesemea.myvtex.com/cms-releases/webhook-releases",
     ],
   },
 };
